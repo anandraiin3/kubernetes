@@ -1,0 +1,22 @@
+{
+   "kind":"Service",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"a2psms",
+      "labels":{
+         "app":"a2psms"
+      }
+   },
+   "spec":{
+      "ports": [
+         {
+           "port":8080,
+           "targetPort":"a2psmsPort"
+         }
+      ],
+      "selector":{
+         "app":"a2psms"
+      },
+      "type": "LoadBalancer"
+   }
+}
