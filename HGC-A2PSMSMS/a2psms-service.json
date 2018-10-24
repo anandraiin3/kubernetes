@@ -5,13 +5,17 @@
       "name":"a2psms",
       "labels":{
          "app":"a2psms"
-      }
+      },
+"annotations":{
+"service.beta.kubernetes.io/aws-load-balancer-type":"nlb"
+
+}
    },
    "spec":{
       "ports": [
          {
            "port":8080,
-           "targetPort":"a2psmsPort"
+           "targetPort":"a2psms-port"
          }
       ],
       "selector":{

@@ -2,7 +2,7 @@
    "kind":"ReplicationController",
    "apiVersion":"v1",
    "metadata":{
-      "name":"a2psmsRC",
+      "name":"a2psms",
       "labels":{
          "app":"a2psms"
       }
@@ -21,11 +21,11 @@
          "spec":{
             "containers":[
                {
-                  "name":"a2psmsContainer",
-                  "image":"mimilaw123/a2psms:firsttry",
+                  "name":"a2psms-container",
+                  "image":"mimilaw123/a2psms:20181024",
                   "ports":[
                      {
-                        "name":"a2psmsPort",
+                        "name":"a2psms-port",
                         "containerPort":8080
                      }
                   ]
